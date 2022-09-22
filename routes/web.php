@@ -23,6 +23,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //Specialty
 Route::get('/specialties', 'SpecialtyController@index')->name('specialties'); 
-Route::get('/specialties/create', 'SpecialtyController@create'); //formulario de registro
+Route::get('/specialties/create', 'SpecialtyController@create')->name('specialties.create'); //formulario de registro
 Route::get('/specialties/{Specialty}/edit', 'SpecialtyController@edit'); //formulario con datos para editar
 Route::post('/specialties', 'specialtyController@index')->name('user');//formulario para guardar los datos 
